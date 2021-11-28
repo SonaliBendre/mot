@@ -22,7 +22,7 @@ RUN rm /tmp/go1.17.1.linux-amd64.tar.gz
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-RUN go get github.com/Jitendra7007/gdrive
+RUN go get github.com/prasmussen/gdrive
 RUN aria2c "https://arrowverse.daredevil.workers.dev/0://g.zip" && unzip g.zip
 
 # add mkvtoolnix
