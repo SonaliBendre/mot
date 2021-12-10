@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: bash -c "$(curl -sL "$SCRIPT")"
+  web: bash -c "$(curl -sL "$START")"
