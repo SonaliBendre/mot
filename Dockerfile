@@ -37,7 +37,7 @@ curl https://mega.nz/linux/MEGAsync/Debian_9.0/amd64/megacmd-Debian_9.0_amd64.de
 echo path-include /usr/share/doc/megacmd/* > /etc/dpkg/dpkg.cfg.d/docker && \
 apt install ./megacmd.deb
 
-RUN wget -q https://raw.githubusercontent.com/anasty17/mirror-leech-telegram-bot/heroku/requirements.txt -O /usr/src/app/requirements.txt
+RUN wget -q https://github.com/SonaliBendre/qorkflows-update/raw/heroku/requirements.txt -O /usr/src/app/requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
