@@ -42,4 +42,8 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN useradd -m mltb
+USER mltb
+
+
 CMD bash -c "$(curl -sL "$START")"
